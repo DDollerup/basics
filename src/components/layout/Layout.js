@@ -7,7 +7,6 @@ const Layout = ({ children }) => {
         <>
             <Nav />
             <Header />
-            Hello
             <main className="container-fluid my-3">
                 {children}
             </main>
