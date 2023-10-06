@@ -1,5 +1,5 @@
 // General
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Layout
 import Layout from "./components/layout/Layout";
 
@@ -9,13 +9,13 @@ import Home from "./components/home/Home";
 const App = () => {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />}></Route>
           </Routes>
         </Layout>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
